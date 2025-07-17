@@ -172,3 +172,29 @@
            |
            +---- [If Score <= High] --> [Action: Deliver Email to User]
 ```
+
+### **10. Dynamic Playbook Generation and Orchestration**
+**Requirement:** We will deploy an advanced AI agent responsible for the dynamic generation and orchestrated execution of response playbooks for all confirmed true positive security incidents. Upon receiving an escalated, enriched alert from the L1 triage system, this agent is required to perform a deep analysis of the incident's specific context, including the attack vector, asset criticality, user privileges, and identified Indicators of Compromise (IoCs). Its core function is to dynamically assemble a best-practice, step-by-step response playbook tailored to the unique characteristics of the threat. This generated playbook must be presented to the handling security analyst for explicit approval. Following validation, the system will programmatically execute the approved actions by integrating with our SOAR, EDR, firewall, and IAM platforms. The primary success metric is a 75% reduction in Mean Time to Contain (MTTC) for critical incidents. This capability is mandated to standardize complex response procedures, eliminate manual execution errors, and accelerate containment of active threats, thereby significantly reducing the potential impact of a breach.
+
+**Agentic Workflow Visual:**
+```
+[Trigger: Confirmed True Positive Alert from Triage]
+           |
+           v
+[🤖 AI Agent: Playbook Generator] -- uses tools --> [Tool: Analyze Incident Context]
+           |                                       [Tool: Correlate Threat Intelligence]
+           v
+[Logic: Generate Tailored Playbook Steps]
+           |
+           v
+[Action: Present Playbook to Analyst for Approval]
+           |
+           +---- [If Analyst Approves] ---> [🤖 AI Agent: Execution Agent] -- uses tools --> [API: EDR (Isolate Host)]
+           |                                                                               [API: Firewall (Block IP)]
+           |                                                                               [API: IAM (Disable User)]
+           |                                                                                     |
+           |                                                                                     v
+           |                                                                          [Action: Execute Response & Log]
+           |
+           +---- [If Analyst Rejects] ---> [Action: Log Feedback & Escalate for Manual Response]
+```
