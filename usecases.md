@@ -3,7 +3,6 @@
 <div align="center">
 
 ![AI Security](https://img.shields.io/badge/AI-Security%20Operations-blue?style=for-the-badge&logo=robot&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-green?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Cybersecurity](https://img.shields.io/badge/Cyber-Security-red?style=for-the-badge&logo=shield&logoColor=white)
 
 *Transforming Security Operations with Artificial Intelligence*
