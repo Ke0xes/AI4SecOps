@@ -58,11 +58,11 @@ graph TD
     G -->|Risk > 80| H[🔴 Action: Escalate to L1 Analyst Queue]
     G -->|Risk ≤ 80| I[⚪ Action: Auto-close Ticket as Low Priority]
     
-    style A fill:#ff6b6b
-    style B fill:#4ecdc4
-    style F fill:#45b7d1
-    style H fill:#ff9999
-    style I fill:#99ff99
+    style A fill:#ff6b6b,stroke:#333,stroke-width:2px,color:#fff
+    style B fill:#4ecdc4,stroke:#333,stroke-width:2px,color:#fff
+    style F fill:#45b7d1,stroke:#333,stroke-width:2px,color:#fff
+    style H fill:#ff9999,stroke:#333,stroke-width:2px,color:#000
+    style I fill:#99ff99,stroke:#333,stroke-width:2px,color:#000
 ```
 
 ---
@@ -93,11 +93,11 @@ graph TD
     F --> G[🤖 AI Agent: Synthesize Sigma/YARA Rule]
     G --> H[📝 Action: Commit Rule to Detection Engineering Git Repo]
     
-    style A fill:#ffd93d
-    style B fill:#4ecdc4
-    style F fill:#45b7d1
-    style G fill:#6c5ce7
-    style H fill:#00b894
+    style A fill:#ffd93d,color:#000
+    style B fill:#4ecdc4,color:#000
+    style F fill:#45b7d1,color:#fff
+    style G fill:#6c5ce7,color:#fff
+    style H fill:#00b894,color:#fff
 ```
 
 ---
@@ -129,12 +129,12 @@ graph TD
     G --> H[📈 Action: Update PowerBI Dashboard]
     G --> I[🎫 Action: Create Jira Ticket for Missing Detection]
     
-    style A fill:#a29bfe
-    style B fill:#4ecdc4
-    style F fill:#45b7d1
-    style G fill:#fd79a8
-    style H fill:#00b894
-    style I fill:#fdcb6e
+    style A fill:#a29bfe,color:#fff
+    style B fill:#4ecdc4,color:#000
+    style F fill:#45b7d1,color:#fff
+    style G fill:#fd79a8,color:#fff
+    style H fill:#00b894,color:#fff
+    style I fill:#fdcb6e,color:#000
 ```
 
 ---
@@ -164,10 +164,10 @@ graph TD
     E --> F
     F --> G[📝 Action: Update ITSM Ticket with Enriched Data]
     
-    style A fill:#e17055
-    style B fill:#4ecdc4
-    style F fill:#6c5ce7
-    style G fill:#00b894
+    style A fill:#e17055,color:#fff
+    style B fill:#4ecdc4,color:#000
+    style F fill:#6c5ce7,color:#fff
+    style G fill:#00b894,color:#fff
 ```
 
 ---
@@ -198,11 +198,11 @@ graph TD
     G --> I[👤 API: IAM Get Manager]
     I --> J[📧 Action: Send Email to Manager]
     
-    style A fill:#00b894
-    style B fill:#4ecdc4
-    style E fill:#fdcb6e
-    style G fill:#e17055
-    style H fill:#00b894
+    style A fill:#00b894,color:#fff
+    style B fill:#4ecdc4,color:#000
+    style E fill:#fdcb6e,color:#000
+    style G fill:#e17055,color:#fff
+    style H fill:#00b894,color:#fff
 ```
 
 ---
@@ -231,12 +231,12 @@ graph TD
     F -->|Score > High| G[🎯 Action: Create Hunt Lead Ticket for L2 Team]
     F -->|Score ≤ High| H[🔚 End]
     
-    style A fill:#a29bfe
-    style B fill:#4ecdc4
-    style D fill:#45b7d1
-    style E fill:#6c5ce7
-    style G fill:#fd79a8
-    style H fill:#ddd
+    style A fill:#a29bfe,color:#fff
+    style B fill:#4ecdc4,color:#000
+    style D fill:#45b7d1,color:#fff
+    style E fill:#6c5ce7,color:#fff
+    style G fill:#fd79a8,color:#fff
+    style H fill:#ddd,color:#000
 ```
 
 ---
@@ -264,12 +264,12 @@ graph TD
     D --> F[📝 Action: Log Containment Action to ITSM Ticket]
     E --> F
     
-    style A fill:#e74c3c
-    style B fill:#f39c12
-    style C fill:#4ecdc4
-    style D fill:#9b59b6
-    style E fill:#3498db
-    style F fill:#00b894
+    style A fill:#e74c3c,color:#fff
+    style B fill:#f39c12,color:#fff
+    style C fill:#4ecdc4,color:#000
+    style D fill:#9b59b6,color:#fff
+    style E fill:#3498db,color:#fff
+    style F fill:#00b894,color:#fff
 ```
 
 ---
@@ -299,12 +299,12 @@ graph TD
     F --> G[🎫 API: ITSM Create Ticket]
     G --> H[👤 Action: Assign Ticket to Asset Owner]
     
-    style A fill:#3498db
-    style B fill:#4ecdc4
-    style E fill:#45b7d1
-    style F fill:#6c5ce7
-    style G fill:#e67e22
-    style H fill:#00b894
+    style A fill:#3498db,color:#fff
+    style B fill:#4ecdc4,color:#000
+    style E fill:#45b7d1,color:#fff
+    style F fill:#6c5ce7,color:#fff
+    style G fill:#e67e22,color:#fff
+    style H fill:#00b894,color:#fff
 ```
 
 ---
@@ -336,13 +336,13 @@ graph TD
     G --> I[🔒 API: O365 Quarantine Email]
     G --> J[🛡️ API: Threat Intel Log IoCs]
     
-    style A fill:#3498db
-    style B fill:#4ecdc4
-    style E fill:#45b7d1
-    style G fill:#e74c3c
-    style H fill:#00b894
-    style I fill:#e67e22
-    style J fill:#9b59b6
+    style A fill:#3498db,color:#fff
+    style B fill:#4ecdc4,color:#000
+    style E fill:#45b7d1,color:#fff
+    style G fill:#e74c3c,color:#fff
+    style H fill:#00b894,color:#fff
+    style I fill:#e67e22,color:#fff
+    style J fill:#9b59b6,color:#fff
 ```
 
 ---
@@ -379,13 +379,13 @@ graph TD
     K --> M
     L --> M
     
-    style A fill:#00b894
-    style B fill:#4ecdc4
-    style E fill:#6c5ce7
-    style F fill:#f39c12
-    style H fill:#e74c3c
-    style I fill:#95a5a6
-    style M fill:#00b894
+    style A fill:#00b894,color:#fff
+    style B fill:#4ecdc4,color:#000
+    style E fill:#6c5ce7,color:#fff
+    style F fill:#f39c12,color:#fff
+    style H fill:#e74c3c,color:#fff
+    style I fill:#95a5a6,color:#fff
+    style M fill:#00b894,color:#fff
 ```
 
 ---
