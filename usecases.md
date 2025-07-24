@@ -6,7 +6,7 @@
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-green?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![Cybersecurity](https://img.shields.io/badge/Cyber-Security-red?style=for-the-badge&logo=shield&logoColor=white)
 
-*Transforming Security Operations with Artificial Intelligence and Machine Learning*
+*Transforming Security Operations with Artificial Intelligence*
 
 [![GitHub stars](https://img.shields.io/github/stars/Ke0xes/AI4SecOps?style=social)](https://github.com/Ke0xes/AI4SecOps)
 [![GitHub forks](https://img.shields.io/github/forks/Ke0xes/AI4SecOps?style=social)](https://github.com/Ke0xes/AI4SecOps)
